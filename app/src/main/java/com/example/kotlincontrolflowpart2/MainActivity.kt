@@ -11,8 +11,11 @@ class MainActivity : AppCompatActivity() {
 
         var result = ""
         val numbers = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-        for ((index, value) in numbers.withIndex()) {
-            result += "$index: $value\n"
+        val cities = arrayOf("Dhaka, Tokyo")
+        val countries = listOf<String>("Bangladesh, Japan, , Chyna, Korea")
+
+        for (country in countries) {
+            result += country + "\n"
         }
 
 
