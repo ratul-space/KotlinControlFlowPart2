@@ -14,10 +14,15 @@ class MainActivity : AppCompatActivity() {
         val cities = arrayOf("Dhaka, Tokyo")
         val countries = listOf<String>("Bangladesh, Japan, , Chyna, Korea")
 
-        for (country in countries) {
-            result += country + "\n"
-        }
+//        for (country in countries) {
+//            result += country + "\n"
+//        }
+        var index = 10
+        while (index > 0) {
+            result += index.toString() + "\n"
 
+            index--
+        }
 
         val tvResult = findViewById<TextView>(R.id.tvResult)
         tvResult.text = result
