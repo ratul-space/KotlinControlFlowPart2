@@ -11,10 +11,11 @@ class MainActivity : AppCompatActivity() {
 
         var result = ""
         val numbers = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-        for (index in 0..9) {
-            result += numbers[index].toString() + "\n"
-
+        for ((index, value) in numbers.withIndex()) {
+            result += "$index: $value\n"
         }
+
+
         val tvResult = findViewById<TextView>(R.id.tvResult)
         tvResult.text = result
 
