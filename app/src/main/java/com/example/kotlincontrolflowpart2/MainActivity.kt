@@ -18,12 +18,17 @@ class MainActivity : AppCompatActivity() {
 //            result += country + "\n"
 //        }
         var index = 0
-        while (index < 10) {
+//        while (index < 10) {
+//            result += index.toString() + "\n"
+//
+//            index += 2
+//        }
+
+        do {
             result += index.toString() + "\n"
+            index++
 
-            index += 2
-        }
-
+        } while (index < 10)
         val tvResult = findViewById<TextView>(R.id.tvResult)
         tvResult.text = result
 
