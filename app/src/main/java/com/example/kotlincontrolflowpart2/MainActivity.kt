@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
 //        for (country in countries) {
 //            result += country + "\n"
 //        }
-        var index = 10
-        while (index > 0) {
+        var index = 0
+        while (index < 10) {
             result += index.toString() + "\n"
 
-            index--
+            index += 2
         }
 
         val tvResult = findViewById<TextView>(R.id.tvResult)
