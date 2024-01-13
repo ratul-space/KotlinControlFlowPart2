@@ -10,10 +10,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var result = ""
-        for (index in 0 until 10) {
-            result += index.toString() + "\n"
+        val numbers = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
+//        for (index in 0..9) {
+//            result += numbers[index].toString() + "\n"
+
+        for (num in 0..9) {
+            result += num.toString() + "\n"
         }
-        var tvResult = findViewById<TextView>(R.id.tvResult)
+        val tvResult = findViewById<TextView>(R.id.tvResult)
         tvResult.text = result
 
     }
