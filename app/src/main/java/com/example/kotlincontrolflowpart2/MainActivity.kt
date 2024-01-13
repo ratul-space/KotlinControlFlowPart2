@@ -10,8 +10,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var result = ""
-        val numbers = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
-        for (index in 0..8) {
+        val numbers = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+        for (index in 0..9) {
             result += numbers[index].toString() + "\n"
 
         }
