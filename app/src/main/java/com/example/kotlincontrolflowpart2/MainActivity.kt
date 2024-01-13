@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var result = ""
-        for (index in 20 downTo 0 step 2) {
+        for (index in 0 until 10) {
             result += index.toString() + "\n"
         }
         var tvResult = findViewById<TextView>(R.id.tvResult)
